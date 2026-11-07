@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dreambouquets | Flowers That Speak</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">✿</span>
+            Dream<span>bouquets</span>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <a href="#shop" class="cart-btn">
+                🛍️ Cart
+                <span id="cartCount">0</span>
+            </a>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="hero-subtitle">FLOWERS FOR EVERY MOMENT</p>
+
+            <h1>
+                Say It With
+                <span>Flowers.</span>
+            </h1>
+
+            <p class="hero-description">
+                Beautiful blooms, thoughtfully arranged.
+                Make every moment special with our handpicked
+                and handcrafted flower bouquets.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#shop" class="primary-btn">Shop Now →</a>
+                <a href="#about" class="secondary-btn">Explore More</a>
+            </div>
+
+            <div class="hero-info">
+                <span>✿ Fresh Flowers</span>
+                <span>✿ Handmade With Love</span>
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?w=900"
+                alt="Beautiful pink flower bouquet">
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="features">
+
+        <div class="feature">
+            <div class="feature-icon">🌸</div>
+            <div>
+                <h3>Fresh Flowers</h3>
+                <p>Freshness in every bloom</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🎁</div>
+            <div>
+                <h3>Beautiful Packaging</h3>
+                <p>Wrapped with love</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🚚</div>
+            <div>
+                <h3>Fast Delivery</h3>
+                <p>Flowers at your doorstep</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">💗</div>
+            <div>
+                <h3>Made With Love</h3>
+                <p>Special moments matter</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section class="categories section-padding" id="categories">
+
+        <div class="section-heading">
+            <p class="small-heading">FIND YOUR PERFECT BLOOM</p>
+            <h2>Shop By Category</h2>
+            <p>Find the perfect flowers for every occasion.</p>
+        </div>
+
+        <div class="category-grid">
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?w=600"
+                     alt="Rose flowers">
+                <div class="category-overlay">
+                    <h3>Romantic Roses</h3>
+                    <a href="#shop" data-category="Roses">Explore →</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600"
+                     alt="Spring flowers">
+                <div class="category-overlay">
+                    <h3>Birthday Blooms</h3>
+                    <a href="#shop" data-category="Birthday">Explore →</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?w=600"
+                     alt="White flowers">
+                <div class="category-overlay">
+                    <h3>Elegant Whites</h3>
+                    <a href="#shop" data-category="Elegant">Explore →</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?w=600"
+                     alt="Colorful flowers">
+                <div class="category-overlay">
+                    <h3>Mixed Bouquets</h3>
+                    <a href="#shop" data-category="Mixed">Explore →</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SHOP SECTION -->
+    <section class="shop section-padding" id="shop">
+
+        <div class="section-heading">
+            <p class="small-heading">OUR BEST COLLECTION</p>
+            <h2>Beautiful Bouquets</h2>
+            <p>Flowers that make every day a little more beautiful.</p>
+        </div>
+
+        <!-- FILTER BUTTONS -->
+        <div class="filter-buttons">
+
+            <button class="filter-btn active" data-filter="All">All Flowers</button>
+            <button class="filter-btn" data-filter="Roses">Roses</button>
+            <button class="filter-btn" data-filter="Birthday">Birthday</button>
+            <button class="filter-btn" data-filter="Elegant">Elegant</button>
+            <button class="filter-btn" data-filter="Mixed">Mixed</button>
+
+        </div>
+
+        <!-- PRODUCTS WILL BE ADDED USING JAVASCRIPT -->
+        <div class="product-grid" id="productGrid"></div>
+
+    </section>
+
+
+    <!-- SPECIAL OFFER -->
+    <section class="offer-section">
+
+        <div class="offer-image">
+            <img
+                src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=900"
+                alt="Pink flower arrangement">
+        </div>
+
+        <div class="offer-content">
+
+            <p class="small-heading">A LITTLE SOMETHING SPECIAL</p>
+
+            <h2>Make Someone's Day Bloom!</h2>
+
+            <p>
+                Send love, happiness and beautiful memories
+                with our specially designed flower collections.
+            </p>
+
+            <div class="offer-tag">
+                <span>15% OFF</span>
+                <small>On selected bouquets</small>
+            </div>
+
+            <a href="#shop" class="primary-btn">Shop Collection →</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section section-padding" id="about">
+
+        <div class="about-content">
+
+            <p class="small-heading">OUR LITTLE FLOWER STORY</p>
+
+            <h2>Flowers Make Life More Beautiful</h2>
+
+            <p>
+                At Dreambouquets, we believe that flowers are more
+                than just beautiful gifts. They express emotions,
+                celebrate relationships and create unforgettable
+                memories.
+            </p>
+
+            <p>
+                Every bouquet is carefully designed with love,
+                creativity and attention to detail to bring a smile
+                to someone's face.
+            </p>
+
+            <a href="#shop" class="primary-btn">Discover Our Flowers →</a>
+
+        </div>
+
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1457089328109-e5d9bd499191?w=900"
+                alt="Beautiful floral arrangement">
+        </div>
+
+    </section>
+
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials section-padding">
+
+        <div class="section-heading">
+            <p class="small-heading">HAPPY CUSTOMERS</p>
+            <h2>Love From Our Customers</h2>
+            <p>Beautiful flowers, beautiful experiences.</p>
+        </div>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "The bouquet was absolutely beautiful!
+                    The flowers were fresh and the packaging
+                    was amazing."
+                </p>
+                <h3>Priya Sharma</h3>
+                <small>Happy Customer</small>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "I ordered flowers for my best friend's
+                    birthday. She loved them so much.
+                    Highly recommended!"
+                </p>
+                <h3>Ananya Patel</h3>
+                <small>Happy Customer</small>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "Beautiful collection, lovely designs
+                    and great service. Definitely ordering
+                    again!"
+                </p>
+                <h3>Riya Mehta</h3>
+                <small>Happy Customer</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+
+        <div class="newsletter-content">
+
+            <p class="small-heading">STAY IN BLOOM</p>
+
+            <h2>Get Flowers & Happy Updates!</h2>
+
+            <p>
+                Subscribe to our newsletter for new collections,
+                special offers and floral inspiration.
+            </p>
+
+            <form id="newsletterForm">
+
+                <input
+                    type="email"
+                    id="emailInput"
+                    placeholder="Enter your email address"
+                    required>
+
+                <button type="submit">Subscribe →</button>
+
+            </form>
+
+            <p id="newsletterMessage"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer id="contact">
+
+        <div class="footer-grid">
+
+            <div class="footer-about">
+
+                <div class="logo footer-logo">
+                    <span class="logo-icon">✿</span>
+                    Dream<span>bouquets</span>
+                </div>
+
+                <p>
+                    Bringing happiness to every doorstep
+                    with beautiful flowers and thoughtfully
+                    designed bouquets.
+                </p>
+
+                <div class="social-links">
+                    <a href="#contact" aria-label="Instagram">📸</a>
+                    <a href="#contact" aria-label="Facebook">📘</a>
+                    <a href="#contact" aria-label="Pinterest">📌</a>
+                </div>
+
+            </div>
+
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#shop">Shop</a>
+                <a href="#about">About Us</a>
+            </div>
+
+
+            <div class="footer-links">
+                <h3>Customer Care</h3>
+                <a href="#contact">Contact Us</a>
+                <a href="#contact">Shipping Policy</a>
+                <a href="#contact">Privacy Policy</a>
+                <a href="#contact">FAQs</a>
+            </div>
+
+
+            <div class="footer-links">
+                <h3>Get In Touch</h3>
+                <p>📧 hello@dreambouquets.com</p>
+                <p>📞 +91 98765 43210</p>
+                <p>📍 Mumbai, India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Dreambouquets. All Rights Reserved.</p>
+            <p>Made with 💗 and flowers.</p>
+        </div>
+
+    </footer>
+
+
+    <!-- TOAST MESSAGE -->
+    <div class="toast" id="toast">
+        Added to cart successfully! 🌸
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
